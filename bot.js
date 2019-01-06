@@ -8,7 +8,7 @@ const Canvas = require('canvas');
 const data = {}
 client.on('ready', () => {
    console.log(`----------------`);
-      console.log(`By : Fenixo.`);
+      console.log(`By : fenixo.`);
         console.log(`---------------`);
       console.log(`ON ${client.guilds.size} Servers `);
     console.log(`---------------`);
@@ -156,7 +156,7 @@ client.on('message', message => {
 
 client.on("guildMemberAdd", (member) => {
 
-let channel = "531502410590584843"
+let channel = "528306102815948820"
 
     if (!channel) {
 
@@ -179,7 +179,7 @@ let channel = "531502410590584843"
     while (!guild)
 
         guild = client.guilds.get("531502410590584843");
-	
+
     guild.fetchInvites().then((data) => {
 
         data.forEach((Invite, key, map) => {
@@ -1313,4 +1313,3 @@ try {
 });
 
 client.login(process.env.BOT_TOKEN);
-  
