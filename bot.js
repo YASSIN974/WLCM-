@@ -8,7 +8,7 @@ const Canvas = require('canvas');
 const data = {}
 client.on('ready', () => {
    console.log(`----------------`);
-      console.log(`By : lg server.`);
+      console.log(`By : Fenixo.`);
         console.log(`---------------`);
       console.log(`ON ${client.guilds.size} Servers `);
     console.log(`---------------`);
@@ -21,7 +21,7 @@ function forEachObject(obj, func) {
     Object.keys(obj).forEach(function (key) { func(key, obj[key]) })
 }
 client.on('guildMemberAdd', member => {
-let channel = member.guild.channels.get("531502374947389441");
+let channel = member.guild.channels.get("531502410590584843");
 if (member.user.bot) return;
 var Canvas = require('canvas')
 var jimp = require('jimp')
@@ -104,7 +104,7 @@ const w = ['./welcome.png'];
 })
 });
 
-const devs = ["332713449215754242"]
+const devs = ["439187325503930369","332713449215754242"]
 
 const adminprefix = "*";
 client.on('message', message => {
@@ -156,7 +156,7 @@ client.on('message', message => {
 
 client.on("guildMemberAdd", (member) => {
 
-let channel = "531502374947389441"
+let channel = "528306102815948820"
 
     if (!channel) {
 
@@ -178,8 +178,8 @@ let channel = "531502374947389441"
 
     while (!guild)
 
- guild = client.guilds.get("531502374947389441");
-	
+        guild = client.guilds.get("508335358677876747");
+
     guild.fetchInvites().then((data) => {
 
         data.forEach((Invite, key, map) => {
@@ -209,7 +209,7 @@ if(message.content.startsWith(prefix + 'bc')) {
 if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
 if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
 let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
-let copy = "Fenixo.";
+let copy = "FeNiXo";
 let request = `Requested By ${message.author.username}`;
 if (!args) return message.reply('**يجب عليك كتابة كلمة او جملة لإرسال البرودكاست**');message.channel.send(`**هل أنت متأكد من إرسالك البرودكاست؟ \nمحتوى البرودكاست:** \` ${args}\``).then(msg => {
 msg.react('✅')
@@ -1313,3 +1313,4 @@ try {
 });
 
 client.login(process.env.BOT_TOKEN);
+  
