@@ -21,7 +21,7 @@ function forEachObject(obj, func) {
     Object.keys(obj).forEach(function (key) { func(key, obj[key]) })
 }
 client.on('guildMemberAdd', member => {
-let channel = member.guild.channels.get("531502410590584843");
+let channel = member.guild.channels.get("531497986900099085");
 if (member.user.bot) return;
 var Canvas = require('canvas')
 var jimp = require('jimp')
@@ -40,7 +40,7 @@ hours = hours - 12;
 if (hours == 0) {
 hours = 12;
 }
-const w = ['./welcome.png'];
+const w = ['welcome.png'];
              let Image = Canvas.Image,
                   canvas = new Canvas(557, 241),
                   ctx = canvas.getContext('2d');
