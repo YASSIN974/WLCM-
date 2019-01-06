@@ -12,7 +12,6 @@ client.on('ready', () => {
         console.log(`---------------`);
       console.log(`ON ${client.guilds.size} Servers `);
     console.log(`---------------`);
-  client.user.setGame(`system bot`);
 }); // 
 const prefix = '*';
 var dat = JSON.parse("{}");
