@@ -156,7 +156,7 @@ client.on('message', message => {
 
 client.on("guildMemberAdd", (member) => {
 
-let channel = "528306102815948820"
+let channel = "531502410590584843"
 
     if (!channel) {
 
@@ -178,8 +178,8 @@ let channel = "528306102815948820"
 
     while (!guild)
 
-        guild = client.guilds.get("508335358677876747");
-
+        guild = client.guilds.get("531502410590584843");
+	
     guild.fetchInvites().then((data) => {
 
         data.forEach((Invite, key, map) => {
